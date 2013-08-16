@@ -1,0 +1,33 @@
+<h2>Using SSH on OSX</h2>
+
+<p>Mac OS X is shipped with the ssh client. You would not need to download a third party application to use ssh. The following instructions will help you get connected to the sunfire servers using the default ssh client included in Mac OS X.</p>
+
+<p>Although you could install developer tools and run C code on your Mac machine, it is highly recommended that you write and test your C code using the sunfire server. There might be some difference in the compiler installed on your machine and the one on the sunfire server, and you getting used to the compiler error and warnings on the sunfire server would greatly help you when you do your practical exams (which would be conducted on the sunfire server)</p>
+
+<ol>
+<li><p>Open the terminal application. You can either open Terminal app from the Applications folder, or simply search for Terminal using Spotlight.</p></li>
+<li><p>You should notice that the terminal look and feels a bit like the sunfire system. In fact, OSX and Solaris (the operating system behind sunfire) are UNIX systems, and hence they behave somewhat similarly under the hood. </p></li>
+<li><p>To connect to the sunfire server, type <code>ssh &lt;SOC Username&gt;@sunfire.comp.nus.edu.sg</code>, replacing <SOC Username> with your SOC Unix Account name. For instance, I would type <code>ssh soedar@sunfire.comp.nus.edu.sg</code>. A way to remember the command is <code>&lt;username&gt; [at] &lt;the server you want to connect to&gt;</code></p></li>
+<li><p>The first time you connect to the sunfire server, you should see a warning about the RSA key fingerprint. Make sure that the key is the same in the screenshot, and type yes.</p></li>
+<li><p>You would then be prompted to enter your password. <strong>NOTE:</strong> the password field will <em>not</em> update even as you key in your password (i.e. the * characters will not appear as you type in your password). Enter your password and hit the enter key.</p></li>
+<li><p>You should be able to see the Sunfire shell. Your sunfire files and settings should all be present now. Any command type in the terminal would now be executed on the sunfire server.</p></li>
+</ol>
+
+<h2>Transfer files between Sunfire and OS X</h2>
+
+<h3>GUI Method</h3>
+
+<ol>
+<li><p>Download CyberDuck from <a href="http://cyberduck.ch" title="Cyberduck">http://cyberduck.ch/</a></p></li>
+<li><p>If your machine is missing the Java runtime, you would be prompted to download the Java runtime. Install the Java runtime.</p></li>
+<li><p>When you open CyberDuck, you should see the following interface. Tap on the + button at the bottom left.</p></li>
+<li><p>The add new connection popup should appear. Fill in the fields as follow:
+Type: SFTP (SSH File Transfer Protocol)
+Nickname: <Anything you one. But preferably something like sunfire>
+Server: sunfire.comp.nus.edu.sg
+Username: <Your SOC UNIX Account Name></p></li>
+<li><p>The newly created connection should appear in the bookmark window. Double click on the one that you just created.</p></li>
+<li><p>A login window should appear. Enter your password. Checking the Add to keychain box would save your password on your device, and you would not need to enter your password again.</p></li>
+<li><p>The directory listing of the remote folder should appear. You can drag the files from the remote server to your local machine to download the file, or drag the files from your machine to the Cyberduck window to upload the files to the remote server.</p></li>
+</ol>
+
