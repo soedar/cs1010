@@ -47,7 +47,7 @@ Although you could install developer tools and run C code on your Mac machine, i
 ![Cyberduck 6](http://soedar.github.io/cs1010/sunfire-osx/images/cyberduck_6.png "Cyberduck 6")
 
 7. The directory listing of the remote folder should appear. You can drag the files from the remote server to your local machine to download the file, or drag the files from your machine to the Cyberduck window to upload the files to the remote server.  
-![Cyberduck 7](http://soedar.github.io/cs1010/sunfire-osx/images/cyberduck_7.png "Cyberduck 7")o
+![Cyberduck 7](http://soedar.github.io/cs1010/sunfire-osx/images/cyberduck_7.png "Cyberduck 7")
 
 ## The Geeky Method (Using the command line)
 
