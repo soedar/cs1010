@@ -47,4 +47,18 @@ Although you could install developer tools and run C code on your Mac machine, i
 ![Cyberduck 6](http://soedar.github.io/cs1010/sunfire-osx/images/cyberduck_6.png "Cyberduck 6")
 
 7. The directory listing of the remote folder should appear. You can drag the files from the remote server to your local machine to download the file, or drag the files from your machine to the Cyberduck window to upload the files to the remote server.  
-![Cyberduck 7](http://soedar.github.io/cs1010/sunfire-osx/images/cyberduck_7.png "Cyberduck 7")
+![Cyberduck 7](http://soedar.github.io/cs1010/sunfire-osx/images/cyberduck_7.png "Cyberduck 7")o
+
+## The Geeky Method (Using the command line)
+
+1. Alternatively, you can use the command line tool called sftp to transfer file from your local file system and the remote server. To connect to the server, type `sftp <soc username>@sunfire.comp.nus.edu.sg`, and enter your password when the Password prompt appears.
+
+2. Once connected, the following commands are available:
+	- **cd**: change directory on the remote server
+	- **pwd**: show the present working directory on the remote server
+	- **ls**: list all the files in the present working directory on the remote server
+	- **lcd**: change directory on the local machine
+	- **lpwd**: show the present working directory on the local machine
+	- **lls**: list all the files in the present working directory on the local machine
+	- **get `<filename>`**: download `<filename>` from the remote server working directory to the local working directory
+	- **put `<filename>`**: upload `<filename>` from the local working directory to the remote server working directory

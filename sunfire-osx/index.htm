@@ -41,6 +41,22 @@
 <li><p>A login window should appear. Enter your password. Checking the Add to keychain box would save your password on your device, and you would not need to enter your password again. <br />
 <img src="http://soedar.github.io/cs1010/sunfire-osx/images/cyberduck_6.png" alt="Cyberduck 6" title="Cyberduck 6" /></p></li>
 <li><p>The directory listing of the remote folder should appear. You can drag the files from the remote server to your local machine to download the file, or drag the files from your machine to the Cyberduck window to upload the files to the remote server. <br />
-<img src="http://soedar.github.io/cs1010/sunfire-osx/images/cyberduck_7.png" alt="Cyberduck 7" title="Cyberduck 7" /></p></li>
+<img src="http://soedar.github.io/cs1010/sunfire-osx/images/cyberduck_7.png" alt="Cyberduck 7" title="Cyberduck 7" />o</p></li>
+</ol>
+
+<h2>The Geeky Method (Using the command line)</h2>
+
+<ol>
+<li><p>Alternatively, you can use the command line tool called sftp to transfer file from your local file system and the remote server. To connect to the server, type <code>sftp &lt;soc username&gt;@sunfire.comp.nus.edu.sg</code>, and enter your password when the Password prompt appears.</p></li>
+<li><p>Once connected, the following commands are available:</p>
+
+<ul><li><strong>cd</strong>: change directory on the remote server</li>
+<li><strong>pwd</strong>: show the present working directory on the remote server</li>
+<li><strong>ls</strong>: list all the files in the present working directory on the remote server</li>
+<li><strong>lcd</strong>: change directory on the local machine</li>
+<li><strong>lpwd</strong>: show the present working directory on the local machine</li>
+<li><strong>lls</strong>: list all the files in the present working directory on the local machine</li>
+<li><strong>get <code>&lt;filename&gt;</code></strong>: download <code>&lt;filename&gt;</code> from the remote server working directory to the local working directory</li>
+<li><strong>put <code>&lt;filename&gt;</code></strong>: upload <code>&lt;filename&gt;</code> from the local working directory to the remote server working directory</li></ul></li>
 </ol>
 
