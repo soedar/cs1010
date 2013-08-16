@@ -1,22 +1,22 @@
-## Using SSH on OSX
+## Accessing Sunfire on Mac OS X
 
-Mac OS X is shipped with the ssh client. You would not need to download a third party application to use ssh. The following instructions will help you get connected to the sunfire servers using the default ssh client included in Mac OS X.
+Mac OS X is shipped with a ssh client. Unlike on the Windows OS, You would not need to download a third party application to access the Sunfire server. The following instructions will help you get connected to the Sunfire servers using the default ssh client included in Mac OS X.
 
-Although you could install developer tools and run C code on your Mac machine, it is highly recommended that you write and test your C code using the sunfire server. There might be some difference in the compiler installed on your machine and the one on the sunfire server, and you getting used to the compiler error and warnings on the sunfire server would greatly help you when you do your practical exams (which would be conducted on the sunfire server)
+Although you could install developer tools and run C code on your Mac machine, it is highly recommended that you write and test your C code on the Sunfire server. There might be some difference in the compiler installed on your machine and the one on the Sunfire, and you getting used to the compiler error and warnings on Sunfire would greatly help you when you do your practical exams.
 
 1. Open the terminal application. You can either open Terminal app from the Applications folder, or simply search for Terminal using Spotlight.  
 ![SSH 1](http://soedar.github.io/cs1010/sunfire-osx/images/ssh_1.png "SSH 1")
 
-2. You should notice that the terminal look and feels a bit like the sunfire system. In fact, OSX and Solaris (the operating system behind sunfire) are UNIX systems, and hence they behave somewhat similarly under the hood. To connect to the sunfire server, type `ssh <SOC Username>@sunfire.comp.nus.edu.sg`, replacing <SOC Username> with your SOC Unix Account name. For instance, I would type `ssh soedar@sunfire.comp.nus.edu.sg`. A way to remember the command is `<username> [at] <the server you want to connect to>`  
+2. You should notice that the terminal look and feels a bit like the sunfire system. In fact, OSX and Solaris (the operating system behind Sunfire) are UNIX systems, and they behave somewhat similarly under the hood. To connect to Sunfire, type `ssh <SOC Username>@sunfire.comp.nus.edu.sg`, replacing <SOC Username> with your SOC Unix Account name. For instance, I would type `ssh soedar@sunfire.comp.nus.edu.sg`. A way to remember the command is `<username> [at] <the server you want to connect to>`  
 ![SSH 2](http://soedar.github.io/cs1010/sunfire-osx/images/ssh_2.png "SSH 2")
 
 3. The first time you connect to the sunfire server, you should see a warning about the RSA key fingerprint. Make sure that the key is **37:d3:59:84:00:75:09:10:f9:ea:99:ed:97:00:8e:40**, and type yes.  
 ![SSH 3](http://soedar.github.io/cs1010/sunfire-osx/images/ssh_3.png "SSH 3")
 
-4. You would then be prompted to enter your password. **NOTE:** the password field will *not* update even as you key in your password (i.e. the * characters will not appear as you type in your password). Enter your password and hit the enter key.  
+4. You would then be prompted to enter your password. **NOTE:** the password field will *not* update even as you key in your password (i.e. the usual * characters will not appear as you type in your password). Enter your password and hit the enter key.  
 ![SSH 4](http://soedar.github.io/cs1010/sunfire-osx/images/ssh_4.png "SSH 4")
 
-5. You should be able to see the Sunfire shell. Your files and settings on sunfire should now be available, and any command type in the terminal would now be executed on the sunfire server.  
+5. You should be able to see the Sunfire shell. Your files and settings on Sunfire should now be available, and any command type in the terminal would now be executed on Sunfire.
 ![SSH 5](http://soedar.github.io/cs1010/sunfire-osx/images/ssh_5.png "SSH 5")
 
 ## Transfer files between Sunfire and OS X
